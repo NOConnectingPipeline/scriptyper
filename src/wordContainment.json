@@ -1,0 +1,777 @@
+{
+    "html" : [
+        {
+            "word": "<!DOCTYPE html>",
+            "mean": "この文書がhtmlであることを示す。またバージョン指定も兼ねる",
+            "level": 3
+        }
+        ,        
+        {
+            "word": "<style>",
+            "mean": "このタグの中にcssを記入する",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<section>",
+            "mean": "タグ群を囲む。divとの違いは見出しを必ず入れなければいけないこと",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<input type=\"text\">",
+            "mean": "テキストボックスを挿入",
+            "level": 4
+        }
+        ,
+        {
+            "word": "<strong>",
+            "mean": "太字にして強調できる",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<meta charset=\"utf-8\">",
+            "mean": "文字コードをutf-8にする",
+            "level": 5
+        }
+        ,
+        {
+            "word": "<html lang=\"en\">",
+            "mean": "文字の言語コードを英語にする",
+            "level": 4
+        }
+        ,
+        {
+            "word": "<span>",
+            "mean": "任意の範囲を指定するタグ。文の一部に特別なスタイルを適用させたい時に使う",
+            "level": 1
+        }
+        ,
+        {
+            "word": "<h1 class=\"heading\">",
+            "mean": "一番大きな見出し、クラスはheading。因みに見出しは6まである",
+            "level": 4
+        }
+        ,
+        {
+            "word": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+            "mean": "",
+            "level": 5
+        }
+        ,
+        {
+            "word": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">",
+            "mean": "",
+            "level": 5
+        }
+        ,
+        {
+            "word": "<header>",
+            "mean": "サイトでよくあるヘッダー専用のタグ",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<caption>",
+            "mean": "表のキャプション",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<form action=\"#\" method=\"POST\">",
+            "mean": "フォームタグ。送り先は指定せず形式は文書形式",
+            "level": 5
+        }
+        ,
+        {
+            "word": "<footer>",
+            "mean": "サイトでよくある規約やプライバシーポリシー等がある一番下の部分のタグ",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<link rel=\"stylesheet\">",
+            "mean": "スタイルシートファイルへのリンクタグ。url=...と指定することでcssファイルを読み込む",
+            "level": 4
+        }
+        ,
+        {
+            "word": "<script>",
+            "mean": "Javascriptが書けるタグ",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<small>",
+            "mean": "特定の範囲の文字を小さくできる",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<div>",
+            "mean": "タグ群を囲むタグ。sectionと違って汎用性が比較的高い。",
+            "level": 1
+        }
+        ,
+        {
+            "word": "<p style=\"color:#000000\">;",
+            "mean": "段落タグの文字の色を黒に指定",
+            "level": 4
+        }
+        ,
+        {
+            "word": "<area>",
+            "mean": "イメージマップ、つまり画像の中の特定の領域を指定しリンク等にできる",
+            "level": 1
+        }
+        ,
+        {
+            "word": "<textarea>",
+            "mean": "複数行にわたるテキストボックス",
+            "level": 2
+        }
+        ,
+        {
+            "word": "<button>",
+            "mean": "ボタン",
+            "level": 2
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+    ]
+    ,
+    "css" : [
+        {
+            "word": "background-color",
+            "mean": "背景色",
+            "level":4
+        }
+        ,
+        {
+            "word": "text-align",
+            "mean": "テキストの位置(Excel等である中央揃えみたいなことができる)",
+            "level":3
+        }
+        ,
+        {
+            "word": "opacity",
+            "mean": "不透明度を指定できる",
+            "level":2
+        }
+        ,
+        {
+            "word": "text-decoration",
+            "mean": "文にアンダーラインや取り消し線を引いたり、リストのインデックスの点を消すことにも使われる",
+            "level":4
+        }
+        ,
+        {
+            "word": "line-height",
+            "mean": "行間を指定",
+            "level":3
+        }
+        ,
+        {
+            "word": "background-image",
+            "mean": "urlを指定することで背景に画像を適用させる",
+            "level":5
+        }
+        ,
+        {
+            "word": "border",
+            "mean": "枠線。長さや色も指定可能",
+            "level":1
+        }
+        ,
+        {
+            "word": "margin",
+            "mean": "要素の外側の余白を指定",
+            "level":1
+        }
+        ,
+        {
+            "word": "padding",
+            "mean": "要素の内側の余白を指定",
+            "level":2
+        }
+        ,
+        {
+            "word": "position",
+            "mean": "要素の配置を指定。異なる参照が選択可能。",
+            "level":2
+        }
+        ,
+        {
+            "word": "width",
+            "mean": "横幅。最初に覚えてほしいプロパティ",
+            "level":1
+        }
+        ,
+        {
+            "word": "height",
+            "mean": "高さ。最初に覚えてほしいプロパティ",
+            "level":2
+        }
+        ,
+        {
+            "word": "transition",
+            "mean": "横に移動、フェードアウト等動きを指定できる",
+            "level":3
+        }
+        ,
+        {
+            "word": "::before",
+            "mean": "二次要素セレクタの一つ。要素の前に何かを置く際に使う",
+            "level":3
+        }
+        ,
+        {
+            "word": "::after",
+            "mean": "二次要素セレクタの一つ。要素の前に何かを置く際に使う",
+            "level":2
+        }
+        ,
+        {
+            "word": ":hover",
+            "mean": "二次要素セレクタの一つ。要素にマウスカーソルが乗った際のスタイルを指定",
+            "level":2
+        }
+        ,
+        {
+            "word": "font-size",
+            "mean": "文字サイズ",
+            "level":3
+        }
+        ,
+        {
+            "word": "font-family",
+            "mean": "フォントを指定できる。デフォルトで用意されているものもあるがそれ以外は何処かから引っ張ってくる",
+            "level":4
+        }
+        ,
+        {
+            "word": "font-weight",
+            "mean": "文字の太さを指定",
+            "level":4
+        }
+        ,
+        {
+            "word": "box-shadow",
+            "mean": "要素に影を付ける。ぼかし幅や色を指定する",
+            "level":4
+        }
+        ,
+        {
+            "word": "list-style-type",
+            "mean": "リストマークの指定(●以外にもできる)",
+            "level":5
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+    ]
+    ,
+    "js" : [
+        {
+            "word": "const",
+            "mean": "変数定義の一つ。再代入はできない",
+            "level": 3
+        }
+        ,
+        {
+            "word": "\"use strict\";",
+            "mean": "strictモードにする。このモードはバグが発生しうるコードがあれば容赦なくエラーを返す",
+            "level":3
+        }
+        ,       
+        {
+            "word": "console.log();",
+            "mean": "コンソールに指定した変数などを表示する。デバッグに便利",
+            "level":3
+        }
+        ,
+        {
+            "word": "null",
+            "mean": "変数の中身が空であることを表す",
+            "level": 3
+        }
+        ,
+        {
+            "word": "undefined",
+            "mean": "変数がそもそも未定義であることを表す",
+            "level":3
+        }
+        ,       
+        {
+            "word": "boolean",
+            "mean": "データ型の一つ。trueとfalseの二つ",
+            "level":3
+        }
+        ,
+        {
+            "word": "string",
+            "mean": "データ型の一つ。文字",
+            "level": 3
+        }
+        ,
+        {
+            "word": "number",
+            "mean": "データ型の一つ。数字",
+            "level":3
+        }
+        ,       
+        {
+            "word": "function",
+            "mean": "関数定義",
+            "level":3
+        }
+        ,
+        {
+            "word": "return()",
+            "mean": "関数内で最終的に返す値を書く",
+            "level": 3
+        }
+        ,
+        {
+            "word": "switch()",
+            "mean": "()内の式が複数の答えになる場合(case 答え)、別々の処理を記述可能",
+            "level":3
+        }
+        ,       
+        {
+            "word": "break",
+            "mean": "ループ処理や条件分岐処理を強制終了させる文。",
+            "level":3
+        }
+        ,
+        {
+            "word": "while",
+            "mean": "後ろに条件式を書き、その条件式がtrueの場合ずっと処理を繰り返す",
+            "level": 3
+        }
+        ,
+        {
+            "word": "for",
+            "mean": "後ろに(初期化式;条件式;増分式)を指定し、条件式がfalseになるまで繰り返す",
+            "level":3
+        }
+        ,       
+        {
+            "word": "let",
+            "mean": "変数定義。再代入も可能",
+            "level":3
+        }
+        ,
+        {
+            "word": "var",
+            "mean": "変数定義。どこからでもアクセスできる反面バグの原因にもなるので使用は非推奨",
+            "level": 3
+        }
+        ,
+        {
+            "word": "includes()",
+            "mean": "前で指定した配列に()内で指定した変数等が含まれているか確認するのに使う",
+            "level":3
+        }
+        ,       
+        {
+            "word": "concat()",
+            "mean": "前で指定した配列と()内の配列を結合して新しい配列を作る",
+            "level":3
+        }
+        ,
+        {
+            "word": "length",
+            "mean": "配列等の要素数",
+            "level": 3
+        }
+        ,
+        {
+            "word": "split()",
+            "mean": "文字列を()内で指定した文字で区切って配列化する",
+            "level":3
+        }
+        ,       
+        {
+            "word": "Math.floor(Math.random() * 10)",
+            "mean": "0以上の数10コの整数の中からランダムに出力",
+            "level":3
+        }
+        ,
+        {
+            "word": "new Array()",
+            "mean": "配列を定義",
+            "level": 3
+        }
+        ,
+        {
+            "word": "push()",
+            "mean": "前で指定した配列に()内の配列もしくは変数を上書きして配列を更新する",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 3
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+        ,       
+        {
+            "word": "",
+            "mean": "",
+            "level":3
+        }
+    ]
+    ,
+    "git": [
+        {
+            "word": "git init",
+            "mean": "フォルダをgitで管理できるようにする",
+            "level": 1
+        }
+        ,
+        {
+            "word": "git status",
+            "mean": "今現在のワークツリーとインデックスの状態を表示",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git remote -v",
+            "mean": "接続先のリモートリポジトリを確認する",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git log",
+            "mean": "変更履歴を確認する",
+            "level": 1
+        }
+        ,
+        {
+            "word": "git add file.txt",
+            "mean": "file.txtファイルをワークツリーからインデックスに追加(ステージング)",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git diff",
+            "mean": "ワークツリーとインデックスの差分を表示",
+            "level": 1
+        }
+        ,
+        {
+            "word": "git reset --hard HEAD^",
+            "mean": "コミットを取り消し、中のファイルも前の状態に戻す",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git reset --soft HEAD^",
+            "mean": "コミットを取り消すが、ファイルは書き換えない",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git push -f",
+            "mean": "プッシュの取り消し",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git branch main",
+            "mean": "mainブランチを作成",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git checkout main",
+            "mean": "mainブランチに移行する",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git checkout -b main",
+            "mean": "mainブランチを作成しそのまま切り替え",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git branch -m main topic1",
+            "mean": "ブランチをmainからtopic1に改名",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git branch -a",
+            "mean": "すべてのブランチを確認する",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git diff main topic1",
+            "mean": "mainブランチとtopic1ブランチを比較する",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git stash -u",
+            "mean": "ブランチを変えたい時などに使う、変更を退避させておくコマンド",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git stash list",
+            "mean": "退避させた変更を確認する",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git stash pop",
+            "mean": "退避させた変更を元に戻すと同時に、スタッシュリストから消去する",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git stash clear",
+            "mean": "退避させた変更を全消去する",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git stash save \"list\"",
+            "mean": "変更を退避させる際、メッセージ「list」を添えて退避。基本はこれ使おう",
+            "level": 5
+        }
+        ,
+        {
+            "word": "git commit -m \"initial commit\"",
+            "mean": "コミット名「initial commit」で今いるブランチにコミット",
+            "level": 5
+        }
+        ,
+        {
+            "word": "git push origin main",
+            "mean": "リモートのmainブランチにプッシュ",
+            "level": 5
+        }
+        ,
+        {
+            "word": "git pull",
+            "mean": "フェッチとマージを同時に行うコマンド。リモートリポジトリから変更を取得する",
+            "level": 1
+        }
+        ,
+        {
+            "word": "git restore --staged README.md",
+            "mean": "README.mdのステージング(add)を取り消す",
+            "level": 5
+        }
+        ,
+        {
+            "word": "git commit --amend \"initial commit2\"",
+            "mean": "コミット名を「initial commit2」に改名",
+            "level": 5
+        }
+        ,
+        {
+            "word": "git branch -d topic1",
+            "mean": "topic1ブランチを削除",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git merge main",
+            "mean": "mainブランチをマージする",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git switch topic1",
+            "mean": "topic1ブランチに切り替える。checkoutと違いわかりやすいという声が多い",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git switch -c topic1",
+            "mean": "topic1ブランチを作成しそのまま切り替え。checkoutと違いわかりやすいという声が多い",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git restore README.md",
+            "mean": "README.mdの変更(ステージング前)を取り消す",
+            "level": 4
+        }
+        ,
+        {
+            "word": "git fetch",
+            "mean": "リモートから最新の履歴を取得する",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git revert",
+            "mean": "コミットのハッシュ値を指定することで特定のコミットを取り消すことが可能",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git rm file.txt",
+            "mean": "file.txtファイルを削除",
+            "level": 3
+        }
+        ,
+        {
+            "word": "git help",
+            "mean": "使用可能なコマンドを検索できる",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git clone",
+            "mean": "新しいディレクトリに指定したリポジトリを複製する",
+            "level": 2
+        }
+        ,
+        {
+            "word": "git remote add origin",
+            "mean": "後ろにリポジトリurlをしていすることでそのリポジトリに接続",
+            "level": 4
+        }
+    ]
+}
