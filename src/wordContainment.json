@@ -55,15 +55,15 @@
         }
         ,
         {
-            "word": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
-            "mean": "",
-            "level": 5
+            "word": "<title>",
+            "mean": "ブラウザ画面の上にあるタブの名前を指定",
+            "level": 1
         }
         ,
         {
-            "word": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">",
-            "mean": "",
-            "level": 5
+            "word": "<body>",
+            "mean": "このタグ内に実際に表示する内容を書いていく",
+            "level": 1
         }
         ,
         {
@@ -139,39 +139,21 @@
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 3
+            "word": "<ruby>",
+            "mean": "フリガナをつけたいテキストを囲うタグ",
+            "level": 1
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level":3
+            "word": "<video>",
+            "mean": "動画タグ。srcでパス指定することで読み込む。",
+            "level":1
         }
         ,       
         {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level": 3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
-            "level":3
+            "word": "<audio>",
+            "mean": "音楽(mp3など)タグ。control属性を指定することで音量調節も可能",
+            "level":1
         }
     ]
     ,
@@ -300,42 +282,6 @@
             "word": "list-style-type",
             "mean": "リストマークの指定(●以外にもできる)",
             "level":5
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level": 3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level": 3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
-            "level":3
         }
     ]
     ,
@@ -475,84 +421,6 @@
         {
             "word": "push()",
             "mean": "前で指定した配列に()内の配列もしくは変数を上書きして配列を更新する",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level": 3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level": 3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level": 3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level": 3
-        }
-        ,
-        {
-            "word": "",
-            "mean": "",
-            "level":3
-        }
-        ,       
-        {
-            "word": "",
-            "mean": "",
             "level":3
         }
     ]
