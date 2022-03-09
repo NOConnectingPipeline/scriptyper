@@ -115,21 +115,23 @@ const TypingGameCss = () => {
     }
   }
 
-  if(charsState[charsState.length - 1] === 1 || charsState[charsState.length - 1] === 2){
+  if((charsState[charsState.length - 1] === 1 || charsState[charsState.length - 1] === 2) &&
+  calculatingScore.length !== 10){
     judgeTyping();
     changeTyping();
     console.log(calculatingScore);
   }
 
   // Capture and display!
-  if(calculatingScore.length === 10) {
+  if(calculatingScore.length === 10 &&
+    (charsState[charsState.length - 1] === 1 || charsState[charsState.length - 1] === 2)) {
     for(let p = 0; p < calculatingScore.length; p++) {
       result += calculatingScore[p];
     }
     console.log(result)
     return (
       <>
-      <h1>合計点： {result}</h1>
+      <h1>合計点：<span className={styles.char__true}>{result}</span></h1>
       </>
     )
   } else {
