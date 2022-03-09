@@ -18,7 +18,8 @@ const App = () => {
             <li className='App-modenav-li' onClick = {() => {setMode(mode[0])}}>HTML</li>
             <li className='App-modenav-li' onClick = {() => {setMode(mode[1])}}>CSS</li>
             <li className='App-modenav-li' onClick = {() => {setMode(mode[2])}}>Javascript</li>
-            <li className='App-modenav-li' onClick = {() => {setMode(mode[3])}}>Git</li>  
+            <li className='App-modenav-li' onClick = {() => {setMode(mode[3])}}>Git</li>
+            <li className='App-modenav-li' onClick = {() => {setMode(mode[4])}}>RESET</li>  
           </ul>
           <img src={logo} className="App-logo" alt="logo" />
           <TypingGameHtml />
@@ -33,7 +34,8 @@ const App = () => {
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[0])}}>HTML</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[1])}}>CSS</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[2])}}>Javascript</li>
-            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li>  
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li> 
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[4])}}>RESET</li> 
           </ul>
           <img src={logo} className="App-logo" alt="logo" />
           <TypingGameCss />
@@ -48,7 +50,8 @@ const App = () => {
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[0])}}>HTML</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[1])}}>CSS</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[2])}}>Javascript</li>
-            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li>  
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li> 
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[4])}}>RESET</li> 
           </ul>
           <img src={logo} className="App-logo" alt="logo" />
           <TypingGameJavascript />
@@ -63,7 +66,8 @@ const App = () => {
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[0])}}>HTML</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[1])}}>CSS</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[2])}}>Javascript</li>
-            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li>  
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li>
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[4])}}>RESET</li>  
           </ul>
           <img src={logo} className="App-logo" alt="logo" />
           <TypingGameGit />
@@ -78,7 +82,8 @@ const App = () => {
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[0])}}>HTML</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[1])}}>CSS</li>
             <li className='App-modenav-li' onClick = {() => {setMode(modeArray[2])}}>Javascript</li>
-            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li>  
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[3])}}>Git</li>
+            <li className='App-modenav-li' onClick = {() => {setMode(modeArray[4])}}>RESET</li>  
           </ul>
           <img src={logo} className="App-logo" alt="logo" />
           <p>モードを選択してください。</p>
