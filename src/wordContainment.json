@@ -642,4 +642,66 @@
             "level": 4
         }
     ]
+    ,
+    "reset" : [
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+        ,
+        {
+            "word": "",
+            "mean": "",
+            "level": 0
+        }
+    ]
 }
