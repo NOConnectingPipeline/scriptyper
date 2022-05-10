@@ -8,5 +8,28 @@
     &__false {
         background-color: #FF6666;
         color: #111111;
+        &__txt {
+            color: #FF6666;
+        }
+    }
+}
+.dialog{
+    &__back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        transition: opacity 0.25s 0s ease-out;
+    }
+    &__block{
+        margin: 10px auto;
+        &__nav {
+            &__li{
+                list-style-type: none;
+                margin-top: 6px;
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import logo from "./logo.svg";
 import "./App.css";
@@ -23,16 +23,25 @@ const App = () => {
   const [mode, setMode] = useState(modeSelect.Reset);
   const [modeScript, setModeScript] = useState('reset');
 
-  useEffect(() => {
+  const randomInt = TypingWordObject(mode);
+
+  const onClick = (selected: {
+    word: string;
+    mean: string;
+    level: number;
+  }[], path: string) => {
+    setMode(selected);
+    setModeScript(path);
+  }
+
     randomWordArr.length = 0;
     randomMeanArr.length = 0;
     randomLevelArr.length = 0;
     for (let i = 0; i < 10; i++) {
-      randomWordArr.push(mode[TypingWordObject(mode)[i]].word);
-      randomMeanArr.push(mode[TypingWordObject(mode)[i]].mean);
-      randomLevelArr.push(mode[TypingWordObject(mode)[i]].level);
+      randomWordArr.push(mode[randomInt[i]].word);
+      randomMeanArr.push(mode[randomInt[i]].mean);
+      randomLevelArr.push(mode[randomInt[i]].level);
     }
-  }, [mode, modeScript]);
 
   const info = {
     randomWord: randomWordArr,
@@ -40,12 +49,10 @@ const App = () => {
     randomLeVel: randomLevelArr,
   };
 
-  console.log(modeScript, mode);
-
   return (
     <div className="App">
       <header className="App-header">
-        <p className="App-modenav-li">RESET</p>
+        <p className="App-modenav-li">EXIT TO TOP</p>
         <img src={logo} className="App-logo" alt="logo" />
         <BrowserRouter>
           <Routes>
@@ -56,24 +63,31 @@ const App = () => {
                 <ul className="App-modenav">
                   <li className="App-modenav-li" onClick={() => {
                     const selected = modeSelect.HTML, path = 'HTML';
-                    setMode(selected);
-                    setModeScript(path);
-                  }}><Link to={'/HTML'}>HTML</Link></li>
+                    onClick(selected, path);
+                  }}>
+                    <Link to={'/HTML'}>HTML</Link>
+                  </li>
+
                   <li className="App-modenav-li" onClick={() => {
                     const selected = modeSelect.CSS, path = 'CSS';
-                    setMode(selected);
-                    setModeScript(path);
-                  }}><Link to={'/CSS'}>CSS</Link></li>
+                    onClick(selected, path);
+                  }}>
+                    <Link to={'/CSS'}>CSS</Link>
+                  </li>
+
                   <li className="App-modenav-li" onClick={() => {
                     const selected = modeSelect.Javascript, path = 'Javascript';
-                    setMode(selected);
-                    setModeScript(path);
-                  }}><Link to={'/Javascript'}>Javascript</Link></li>
+                    onClick(selected, path);
+                  }}>
+                    <Link to={'/Javascript'}>Javascript</Link>
+                  </li>
+
                   <li className="App-modenav-li" onClick={() => {
                     const selected = modeSelect.Git, path = 'Git';
-                    setMode(selected);
-                    setModeScript(path);
-                  }}><Link to={'/Git'}>Git</Link></li>
+                    onClick(selected, path);
+                  }}>
+                    <Link to={'/Git'}>Git</Link>
+                  </li>
                 </ul>
               </>
             } />
@@ -85,10 +99,12 @@ const App = () => {
 };
 
 /*
-                  <li className="App-modenav-li" onClick={() => {
-                    setMode(modeSelect.);
-                    setModeScript(modeScriptArray[]);
-                  }}><Link to={`/${modeScript}`}></Link></li>
+<li className="App-modenav-li" onClick={() => {
+  const selected = modeSelect, path = '';
+  onClick(selected, path);
+}}>
+  <Link to={'/'}></Link>
+</li>
 */
 
 export default App;

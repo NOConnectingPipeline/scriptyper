@@ -289,25 +289,25 @@
         {
             "word": "const",
             "mean": "変数定義の一つ。再代入はできない",
-            "level": 3
+            "level": 2
         }
         ,
         {
             "word": "\"use strict\";",
             "mean": "strictモードにする。このモードはバグが発生しうるコードがあれば容赦なくエラーを返す",
-            "level":3
+            "level":4
         }
         ,       
         {
             "word": "console.log();",
             "mean": "コンソールに指定した変数などを表示する。デバッグに便利",
-            "level":3
+            "level":4
         }
         ,
         {
             "word": "null",
             "mean": "変数の中身が空であることを表す",
-            "level": 3
+            "level": 1
         }
         ,
         {
@@ -325,13 +325,13 @@
         {
             "word": "string",
             "mean": "データ型の一つ。文字",
-            "level": 3
+            "level": 2
         }
         ,
         {
             "word": "number",
             "mean": "データ型の一つ。数字",
-            "level":3
+            "level":2
         }
         ,       
         {
@@ -355,31 +355,31 @@
         {
             "word": "break",
             "mean": "ループ処理や条件分岐処理を強制終了させる文。",
-            "level":3
+            "level":2
         }
         ,
         {
             "word": "while",
             "mean": "後ろに条件式を書き、その条件式がtrueの場合ずっと処理を繰り返す",
-            "level": 3
+            "level": 2
         }
         ,
         {
             "word": "for",
             "mean": "後ろに(初期化式;条件式;増分式)を指定し、条件式がfalseになるまで繰り返す",
-            "level":3
+            "level":1
         }
         ,       
         {
             "word": "let",
             "mean": "変数定義。再代入も可能",
-            "level":3
+            "level":1
         }
         ,
         {
             "word": "var",
             "mean": "変数定義。どこからでもアクセスできる反面バグの原因にもなるので使用は非推奨",
-            "level": 3
+            "level": 1
         }
         ,
         {
@@ -397,7 +397,7 @@
         {
             "word": "length",
             "mean": "配列等の要素数",
-            "level": 3
+            "level": 2
         }
         ,
         {
@@ -409,19 +409,19 @@
         {
             "word": "Math.floor(Math.random() * 10)",
             "mean": "0以上の数10コの整数の中からランダムに出力",
-            "level":3
+            "level":5
         }
         ,
         {
             "word": "new Array()",
             "mean": "配列を定義",
-            "level": 3
+            "level": 4
         }
         ,
         {
             "word": "push()",
             "mean": "前で指定した配列に()内の配列もしくは変数を上書きして配列を更新する",
-            "level":3
+            "level":2
         }
     ]
     ,
