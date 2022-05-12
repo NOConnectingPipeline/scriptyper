@@ -20,6 +20,9 @@ const App = () => {
     Reset: WordContainment.reset
   };
 
+  const modeSelectKeys = Object.keys(modeSelect),
+  modeSelectValue = Object.values(modeSelect);
+
   const [mode, setMode] = useState(modeSelect.Reset);
   const [modeScript, setModeScript] = useState('reset');
 
@@ -61,33 +64,17 @@ const App = () => {
               <>
                 <h3>モードを選択してください。</h3>
                 <ul className="App-modenav">
-                  <li className="App-modenav-li" onClick={() => {
-                    const selected = modeSelect.HTML, path = 'HTML';
-                    onClick(selected, path);
-                  }}>
-                    <Link to={'/HTML'}>HTML</Link>
-                  </li>
+                  {modeSelectKeys.map((value, index) => {
+                    return(
+                      <li key={index} className="App-modenav-li" onClick={() => {
+                        const selected = modeSelectValue[index], path = value;
+                        onClick(selected, path);
+                      }}>
+                        <Link to={`/${value}`}>{value}</Link>
+                      </li>
+                    )
+                  })}
 
-                  <li className="App-modenav-li" onClick={() => {
-                    const selected = modeSelect.CSS, path = 'CSS';
-                    onClick(selected, path);
-                  }}>
-                    <Link to={'/CSS'}>CSS</Link>
-                  </li>
-
-                  <li className="App-modenav-li" onClick={() => {
-                    const selected = modeSelect.Javascript, path = 'Javascript';
-                    onClick(selected, path);
-                  }}>
-                    <Link to={'/Javascript'}>Javascript</Link>
-                  </li>
-
-                  <li className="App-modenav-li" onClick={() => {
-                    const selected = modeSelect.Git, path = 'Git';
-                    onClick(selected, path);
-                  }}>
-                    <Link to={'/Git'}>Git</Link>
-                  </li>
                 </ul>
               </>
             } />
@@ -97,14 +84,5 @@ const App = () => {
     </div>
   );
 };
-
-/*
-<li className="App-modenav-li" onClick={() => {
-  const selected = modeSelect, path = '';
-  onClick(selected, path);
-}}>
-  <Link to={'/'}></Link>
-</li>
-*/
 
 export default App;
