@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./TypingGameComponent.module.scss";
 
 type TypingGameResultProps = {
@@ -14,8 +14,9 @@ const TypingGameResult: React.FC<TypingGameResultProps> = ({
   for (let i = 0; i < calculatingScore.length; i++) {
     result += calculatingScore[i];
   }
+  const [classToggle, setClassToggle] = useState(true);
   return (
-    <div className={styles.dialog__back}>
+    <div className={classToggle === true ? styles.dialog__back : styles.dialog__back__through} onClick = {() => {setClassToggle(false)}}>
       <div className={styles.dialog__block}>
         <ul className={styles.dialog__block__nav}>
           {calculatingScore.map((num: number, index: number) => {
@@ -40,6 +41,7 @@ const TypingGameResult: React.FC<TypingGameResultProps> = ({
           })}
         </ul>
         <h1>合計点:<span className={styles.char__true}>{result}</span></h1>
+        <p>画面クリックでポップアップを閉じます</p>
       </div>
     </div>
   );
