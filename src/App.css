@@ -40,6 +40,8 @@
   flex-direction: row;
   width: 200px;
   list-style-type: none;
+  text-decoration: none;
+  color: azure;
 }
 
 .App-modenav-li:hover {

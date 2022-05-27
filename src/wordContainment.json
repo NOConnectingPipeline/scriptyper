@@ -643,65 +643,155 @@
         }
     ]
     ,
-    "reset" : [
+    "php" : [
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "echo",
+            "mean": "後の文を出力する。printとの違いは複数の文字列が使えるところ",
+            "level": 1
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "print",
+            "mean": "後の文を出力する。echoとの違いは式として使用可能なところ",
+            "level": 2
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "define()",
+            "mean": "定数を定義。第一引数に定数名、第二引数に値を指定する",
+            "level": 2
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "<?php ?>",
+            "mean": "php..から後ろにphpのプログラム文を書く。",
+            "level": 4
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "array()",
+            "mean": "配列を定義。()内に要素を書き並べる",
+            "level": 2
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "explode()",
+            "mean": "文字列を特定の文字で区切って配列化する関数。第一引数に区切り文字、第二引数に対象の文字列を指定",
+            "level": 3
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "foreach(array as $key => $value) {}",
+            "mean": "名前「array」の配列の長さだけ処理を繰り返す。$keyにインデックス、$valueに要素が入る",
+            "level": 5
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "break",
+            "mean": "ループを強制的に抜け出す。foreachでは使えない",
+            "level": 2
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "strlen()",
+            "mean": "引数の文字列の長さを返す",
+            "level": 2
         }
         ,
         {
-            "word": "",
-            "mean": "",
-            "level": 0
+            "word": "str_replace()",
+            "mean": "第三引数の文字列の元の特定の部分(第一引数)と第二引数で指定した文字列とを入れ替える",
+            "level": 4
+        }
+        ,
+        {
+            "word": "str_repeat()",
+            "mean": "文字列を指定された回数繰り返す。第一引数に文字列、第二引数に回数(>0)を指定",
+            "level": 3
+        }
+        ,
+        {
+            "word": "substr()",
+            "mean": "引数の文字列の特定の位置から文字を取り出す。第一引数に文字列、第二引数に取出開始位置、第三引数に文字数を指定",
+            "level": 2
+        }
+        ,
+        {
+            "word": "ucfirst()",
+            "mean": "引数で指定した文字列の先頭の文字がアルファベットならば、その文字を大文字に変換",
+            "level": 3
+        }
+        ,
+        {
+            "word": "ucwords()",
+            "mean": "引数で指定した文字列をスペースで区切り、各文字列の先頭文字を大文字アルファベットに変換。但し、アルファベット以外は無視",
+            "level": 3
+        }
+        ,
+        {
+            "word": "getdate()",
+            "mean": "現在の日時を連想配列化して返す。各インデックス名は直感的で指定がしやすい",
+            "level": 3
+        }
+        ,
+        {
+            "word": "end()",
+            "mean": "配列の末尾の要素",
+            "level": 1
+        }
+        ,
+        {
+            "word": "date()",
+            "mean": "現在日時を取得。特定のアルファベット(月であれば、m等)で識別。",
+            "level": 1
+        }
+        ,
+        {
+            "word": "range()",
+            "mean": "第一引数から第二引数までの数を配列化して返す",
+            "level": 2
+        }
+        ,
+        {
+            "word": "rand()",
+            "mean": "第一引数から第二引数までの数を一つランダムに返す",
+            "level": 1
+        }
+        ,
+        {
+            "word": "abs()",
+            "mean": "引数として指定した数を絶対値にして返す",
+            "level": 1
+        }
+        ,
+        {
+            "word": "count()",
+            "mean": "引数として指定した配列の長さを返す",
+            "level": 2
+        }
+        ,
+        {
+            "word": "class_exists()",
+            "mean": "引数として指定したクラス名が存在するかをboolean型で返す",
+            "level": 4
+        }
+        ,
+        {
+            "word": "$_POST[]",
+            "mean": "指定した名前のフォームに入力した内容",
+            "level": 3
+        }
+        ,
+        {
+            "word": "$_SERVER['PHP_SELF']",
+            "mean": "現在実行しているPHPスクリプトのファイル名情報を格納",
+            "level": 5
+        }
+        ,
+        {
+            "word": "$_SERVER['SERVER_ADDR']",
+            "mean": "現在スクリプトが実行されているサーバーの IP アドレス情報を格納",
+            "level": 5
         }
     ]
 }

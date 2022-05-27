@@ -12,6 +12,30 @@ $colors-default :#FFFAFA;
     }
 }
 
+@keyframes outWord {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        position: relative;
+        left: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes inWord {
+    from {
+        position: relative;
+        left: 0;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .char {
     &__default {
         color: $colors-default;
@@ -37,6 +61,13 @@ $colors-default :#FFFAFA;
         height: 100%;
         background-color: rgba($color: #000000, $alpha: 0.5);
         animation: fadeIn 1s ease-out 0s 1 normal forwards running;
+        &__through {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            opacity: 0;
+        }
     }
     &__block{
         margin: 10px auto;
