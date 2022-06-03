@@ -18,6 +18,7 @@ const TypingGameComponent: React.FC<TypingGameProps> = ({
   const [charsArray, setCharsArray] = useState(0);
   const [charsState, setCharsState] = useState([0]);
   const [calculatingScore, setCalculatingScore] = useState([0]);
+  const [classToggle, setClassToggle] = useState(true);
 
   let chars: string = randomWord[intRandom];
 
@@ -79,6 +80,7 @@ const TypingGameComponent: React.FC<TypingGameProps> = ({
       console.log(chars);
       resetTyping();
       console.log(charsState);
+      setClassToggle(!classToggle);
     }
   };
 
@@ -102,6 +104,7 @@ const TypingGameComponent: React.FC<TypingGameProps> = ({
     return (
       <>
         <h1
+          className={classToggle === true ? styles.inWord : styles.string__in}
           onKeyDown={(e) => {
             const key = e.key;
             if (key === "Backspace") {
