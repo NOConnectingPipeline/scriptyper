@@ -18,16 +18,14 @@ $colors-default :#FFFAFA;
     }
 
     to {
-        position: relative;
-        left: 0;
+        text-align: left;
         opacity: 0;
     }
 }
 
 @keyframes inWord {
     from {
-        position: relative;
-        left: 0;
+        text-align: right;
         opacity: 0;
     }
 
@@ -49,6 +47,12 @@ $colors-default :#FFFAFA;
         &__txt {
             color: $colors-false;
         }
+    }
+}
+
+.string{
+    &__in {
+        animation: inWord 0.25s ease-in 0s 1 normal forwards running;
     }
 }
 
