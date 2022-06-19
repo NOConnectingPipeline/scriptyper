@@ -1,9 +1,8 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
+  text-align: center;
   height: 40vmin;
+  margin-top: 100px;
   pointer-events: none;
   opacity: 0.25;
 }
@@ -26,11 +25,13 @@
 }
 
 .App-link {
-  color: #61dafb;
+  text-align: center;
 }
 
 .App-modenav {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: absolute;
   left: 00;
   top: 0;
@@ -38,7 +39,8 @@
 
 .App-modenav-li {
   flex-direction: row;
-  width: 200px;
+  width: fit-content;
+  margin-right: 50px;
   list-style-type: none;
   text-decoration: none;
   color: azure;
