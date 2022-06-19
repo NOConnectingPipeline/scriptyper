@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TypingGameResult from "./TypingGameResult";
 import styles from "./TypingGameComponent.module.scss";
 
@@ -14,13 +14,33 @@ const TypingGameComponent: React.FC<TypingGameProps> = ({
   randomLevel,
 }) => {
   // Call the hook
+  const [classToggle, setClassToggle] = useState(false);
   const [intRandom, setIntRandom] = useState(0);
   const [charsArray, setCharsArray] = useState(0);
   const [charsState, setCharsState] = useState([0]);
   const [calculatingScore, setCalculatingScore] = useState([0]);
-  const [classToggle, setClassToggle] = useState(true);
 
-  let chars: string = randomWord[intRandom];
+  let chars: string[] = [randomWord[intRandom], randomWord[intRandom]];
+
+  const changeCharsState = (charsStateArr: number[]) => {
+    setCharsState(charsStateArr);
+  }
+
+  const changeCharsArray = (charsNum: number) => {
+    setCharsArray(charsNum);
+  }
+
+  const changeIntRandom = (int: number) => {
+    setIntRandom(int);
+  }
+
+  const changeCalculatingScore = (scoreArr: number[]) => {
+    setCalculatingScore(scoreArr);
+  }
+
+  const changeClassToggle = () => {
+    setClassToggle(!classToggle);
+  }
 
   const judgeTyping = () => {
     if (
@@ -29,41 +49,42 @@ const TypingGameComponent: React.FC<TypingGameProps> = ({
       calculatingScore.length < 10
     ) {
       calculatingScore[intRandom] = !charsState.includes(2)
-        ? randomLevel[intRandom]
-        : 0;
-      setCalculatingScore(calculatingScore);
+      ? randomLevel[intRandom]
+      : 0;
+    changeCalculatingScore(calculatingScore);
     }
-  };
+  }
 
   const resetTyping = () => {
     if (calculatingScore.length !== 10 && charsState.length === 1) {
       let tmpCharsState = [];
-      for (let n = 0; n < chars.split("").length; n++) {
+      for (let n = 0; n < randomWord[intRandom].split("").length; n++) {
         tmpCharsState.push(0);
       }
-      setCharsState(tmpCharsState);
+      changeCharsState(tmpCharsState);
     }
   };
 
   resetTyping();
 
   console.log(charsState);
+  console.log(classToggle);
 
   const insertTyping = (keyName: string) => {
-    if (keyName === chars.split("")[charsArray]) {
+    if (keyName === randomWord[intRandom].split("")[charsArray]) {
       charsState[charsArray] = 1;
     } else {
       charsState[charsArray] = 2;
     }
-    setCharsArray(charsArray + 1);
-    setCharsState(charsState);
+    changeCharsArray(charsArray + 1);
+    changeCharsState(charsState);
   };
 
   const deleteTyping = () => {
     if (charsArray > 0) {
       charsState[charsArray] = 0;
-      setCharsArray((charsArray) => charsArray - 1);
-      setCharsState(charsState);
+      changeCharsArray(charsArray - 1);
+      changeCharsState(charsState);
     }
   };
 
@@ -73,20 +94,22 @@ const TypingGameComponent: React.FC<TypingGameProps> = ({
         charsState[charsState.length - 1] === 2) &&
       calculatingScore.length < 10
     ) {
-      setCharsArray(0);
-      setCharsState([0]);
-      setIntRandom(intRandom + 1);
-      chars = randomWord[intRandom];
-      console.log(chars);
+      changeClassToggle();
+      changeCharsArray(0);
+      changeCharsState([0]);
+      changeIntRandom(intRandom + 1);
+      if (chars[0] === randomWord[intRandom - 1] || chars[1] === null) {
+        chars[0] = randomWord[intRandom];
+      } else if (chars[1] === randomWord[intRandom - 1] || chars[1] === null) {
+        chars[1] = randomWord[intRandom];
+      }
       resetTyping();
-      console.log(charsState);
-      setClassToggle(!classToggle);
     }
   };
 
   judgeTyping();
   changeTyping();
-  console.log(calculatingScore);
+  //console.log(calculatingScore);
 
   // Capture and display!
   if (
@@ -102,41 +125,49 @@ const TypingGameComponent: React.FC<TypingGameProps> = ({
     );
   } else {
     return (
-      <>
-        <h1
-          className={classToggle === true ? styles.inWord : styles.string__in}
-          onKeyDown={(e) => {
-            const key = e.key;
-            if (key === "Backspace") {
-              deleteTyping();
-            } else if (key.length === 1) {
-              insertTyping(key);
-            }
-            e.preventDefault();
-          }}
-          tabIndex={0}
-        >
-          {chars.split("").map((char, index) => {
-            let state = charsState[index];
+      <div>
+        <div className={classToggle === true ? styles.swiper__right : styles.swiper__left}>
+          {chars.map((value, index) => {
             return (
-              <span
-                key={char + index}
-                className={
-                  state === 0
-                    ? styles.char__default
-                    : state === 1
-                    ? styles.char__true
-                    : styles.char__false
-                }
-              >
-                {char}
-              </span>
+              <div key={index} className={styles.words}>
+                <h1
+                  //className={classToggle === 2 || classToggle === 0 ? styles.string__in : classToggle === 1 ? styles.string__out : undefined}
+                  onKeyDown={(e) => {
+                    const key = e.key;
+                    if (key === "Backspace") {
+                      deleteTyping();
+                    } else if (key.length === 1) {
+                      insertTyping(key);
+                    }
+                    e.preventDefault();
+                  }}
+                  tabIndex={0}
+                >
+                  {value.split("").map((char, index) => {
+                    let state = charsState[index];
+                    return (
+                      <span
+                        key={char + index}
+                        className={
+                          state === 0
+                            ? styles.char__default
+                            : state === 1
+                              ? styles.char__true
+                              : styles.char__false
+                        }
+                      >
+                        {char}
+                      </span>
+                    );
+                  })}
+                </h1>
+              </div>
             );
           })}
-        </h1>
-        <p>LEVEL: {randomLevel[intRandom]}</p>
-        <p>{randomMean[intRandom]}</p>
-      </>
+        </div>
+        <p className={styles.words__option}>LEVEL: {randomLevel[intRandom]}</p>
+        <p className={styles.words__option}>{randomMean[intRandom]}</p>
+      </div>
     );
   }
 };

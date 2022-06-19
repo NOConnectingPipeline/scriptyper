@@ -64,7 +64,7 @@ const App = () => {
               path={`/${modeScript}`}
               element={
                 <Link to={"/"} className="App-modenav-li">
-                  ESCAPE TO TOP
+                  <p className="App-link">ESCAPE TO TOP</p>
                 </Link>
               }
             />

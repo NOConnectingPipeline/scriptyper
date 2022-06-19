@@ -12,25 +12,49 @@ $colors-default :#FFFAFA;
     }
 }
 
-@keyframes outWord {
-    from {
-        opacity: 1;
+@keyframes swiperRight {
+    0% {
+        transform: translateX(0%);
     }
 
-    to {
-        text-align: left;
-        opacity: 0;
+    100% {
+        transform: translateX(-50%);
     }
 }
 
-@keyframes inWord {
-    from {
-        text-align: right;
-        opacity: 0;
+@keyframes swiperLeft {
+    0% {
+        transform: translateX(-50%);
     }
 
-    to {
-        opacity: 1;
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.words {
+    text-align: center;
+    min-width: 100vw;
+    height: fit-content;
+    &__option {
+        text-align: center;
+    }
+}
+
+.swiper {
+    &__right {
+        display: flex;
+        justify-content: flex-start;
+        width: 200vw;
+        overflow: hidden;
+        animation: swiperRight 0.5s ease-in 0s 1 normal forwards running;
+    }
+    &__left {
+        display: flex;
+        justify-content: flex-start;
+        width: 200vw;
+        overflow: hidden;
+        animation: swiperLeft 0.5s ease-in 0s 1 normal forwards running;
     }
 }
 
@@ -54,10 +78,17 @@ $colors-default :#FFFAFA;
     &__in {
         animation: inWord 0.25s ease-in 0s 1 normal forwards running;
     }
+    &__out {
+        animation: outWord 0.25s ease-in 0s 1 normal forwards running;
+    }
 }
 
 .dialog{
     &__back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 0;
         left: 0;
