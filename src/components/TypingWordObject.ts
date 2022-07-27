@@ -4,7 +4,8 @@ const numRandom = (max: number) => {
     return Math.floor(Math.random() * max);
 }
 
-const TypingWordObject = (mode: {
+const TypingWordObject = (
+  mode: {
     word: string;
     mean: string;
     level: number;

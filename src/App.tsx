@@ -63,8 +63,8 @@ const App = () => {
             <Route
               path={`/${modeScript}`}
               element={
-                <Link to={"/"} className="App-modenav-li">
-                  <p className="App-link">ESCAPE TO TOP</p>
+                <Link to={"/"} className="App-link">
+                  <p>ESCAPE TO TOP</p>
                 </Link>
               }
             />
@@ -85,7 +85,7 @@ const App = () => {
               path={"/"}
               element={
                 <>
-                  <h3>モードを選択してください。</h3>
+                  <h3 className="App-highlight">モードを選択してください。</h3>
                   <ul className="App-modenav">
                     {modeSelectKeys.map((value, index) => {
                       return (
