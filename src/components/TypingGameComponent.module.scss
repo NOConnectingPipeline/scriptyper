@@ -12,50 +12,9 @@ $colors-default :#FFFAFA;
     }
 }
 
-@keyframes swiperRight {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-@keyframes swiperLeft {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-.words {
+.TypingGameComponent {
+    width: 100vw;
     text-align: center;
-    min-width: 100vw;
-    height: fit-content;
-    &__option {
-        text-align: center;
-    }
-}
-
-.swiper {
-    &__right {
-        display: flex;
-        justify-content: flex-start;
-        width: 200vw;
-        overflow: hidden;
-        animation: swiperRight 0.5s ease-in 0s 1 normal forwards running;
-    }
-    &__left {
-        display: flex;
-        justify-content: flex-start;
-        width: 200vw;
-        overflow: hidden;
-        animation: swiperLeft 0.5s ease-in 0s 1 normal forwards running;
-    }
 }
 
 .char {
@@ -71,15 +30,6 @@ $colors-default :#FFFAFA;
         &__txt {
             color: $colors-false;
         }
-    }
-}
-
-.string{
-    &__in {
-        animation: inWord 0.25s ease-in 0s 1 normal forwards running;
-    }
-    &__out {
-        animation: outWord 0.25s ease-in 0s 1 normal forwards running;
     }
 }
 
@@ -109,6 +59,7 @@ $colors-default :#FFFAFA;
         &__nav {
             &__li{
                 list-style-type: none;
+                text-decoration: none;
                 margin-top: 6px;
             }
         }
